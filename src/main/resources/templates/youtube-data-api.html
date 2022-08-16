@@ -1,0 +1,20 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>youtube-data-api</title>
+</head>
+<body>
+	<form action="/youtube-data-api" method="get">
+		<input type="search" name="inputQuery">
+		<input type="submit">
+	</form>
+	<ul th:each="youtubeVo: ${youtubeVoList}">
+		<li>
+			<p th:text="${youtubeVo.videoId}"></p>
+			<p th:text="${youtubeVo.videoTitle}"></p>
+			<p th:text="${youtubeVo.videoUrl}"></p>
+		</li>
+	</ul>
+</body>
+</html>
