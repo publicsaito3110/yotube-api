@@ -1,10 +1,10 @@
-package com.lyric;
+package com.yotubeAPI;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class LyricApplicationTests {
+class YotubeAPIApplicationTests {
 
 	@Test
 	void contextLoads() {
